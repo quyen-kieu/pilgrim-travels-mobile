@@ -28,17 +28,22 @@ export default function TestScreen() {
 
         <AppInput
           label="Email"
+          required
           value={email}
           onChangeText={setEmail}
-          keyboardType="email-address"
+          error
+          errorText="Please enter your email."
         />
 
         <View style={styles.smallSpace} />
 
         <AppPasswordInput
           label="Password"
+          required
           value={password}
           onChangeText={setPassword}
+          error
+          errorText="Password is required."
         />
 
         <View style={styles.space} />
