@@ -5,6 +5,7 @@ node_modules/
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
@@ -30,6 +31,9 @@ yarn-error.*
 .DS_Store
 *.pem
 
+# Windows
+Thumbs.db
+
 # local env files
 .env*.local
 
@@ -39,3 +43,22 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# Misc
+coverage/
+*.tmp
