@@ -1,21 +1,13 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Text } from 'react-native-paper';
+import React, { useEffect } from 'react';
 
-export default function SplashScreen() {
-  return (
-    <View style={styles.container}>
-      <Text variant="headlineMedium">
-        Splash Screen
-      </Text>
-    </View>
-  );
+export default function SplashScreen({ navigation }) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.replace('Login');
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, [navigation]);
+
+  return null;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
