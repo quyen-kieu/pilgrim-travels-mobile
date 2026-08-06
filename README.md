@@ -186,6 +186,7 @@ The application currently includes:
 - Navigation architecture
 - Authentication layout
 - Placeholder screens
+  testing
 
 ### Next Milestone
 
